@@ -1,0 +1,71 @@
+/* Remplacer le bleu Bootstrap (.btn-primary, .bg-primary, etc.) par du vert */
+
+.btn-primary {
+    background-color: #32cd32 !important; /* vert Bootstrap success */
+    border-color: #32cd32 !important;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #32cd32 !important;
+    border-color: #32cd32 !important;
+}
+
+.bg-primary {
+    background-color: #32cd32 !important;
+    color: #fff;
+}
+
+.text-primary {
+    color: #32cd32 !important;
+}
+
+.navbar.bg-dark {
+    background-color: #32cd32 !important;
+}
+
+/* Lien actif */
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+   
+    font-weight: bold;
+}
+/* Liens verts avec soulignement animé */
+.nav-custom {
+    color: rgb(18, 18, 18) !important;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+.nav-custom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #32cd32;
+    transition: width 0.3s ease;
+}
+
+.nav-custom:hover {
+    color: #32cd32 !important;
+}
+
+.nav-custom:hover::after {
+    width: 100%;
+}
+.btn-outline-primary
+{
+    color: #32cd32 !important;
+    border-color: #32cd32 !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    background-color: #32cd32 !important;
+    color: #fff !important;
+    border-color: #32cd32 !important;
+}
